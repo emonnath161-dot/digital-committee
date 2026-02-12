@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ডিজিটাল কমিটি ম্যানেজমেন্ট সিস্টেম</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Hind Siliguri', 'sans-serif'],
+            },
+            colors: {
+              indigo: {
+                50: '#f5f7ff',
+                100: '#ebf0ff',
+                600: '#4f46e5',
+                950: '#1e1b4b',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; margin: 0; background-color: #f8fafc; overflow-x: hidden; }
+        .loader-spin { border-top-color: #4f46e5; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        html { scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #4f46e5; border-radius: 10px; }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "react-router-dom": "https://esm.sh/react-router-dom@7.1.1?deps=react@19.0.0,react-dom@19.0.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.463.0?deps=react@19.0.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+    <div id="root">
+        <div class="min-h-screen flex flex-col items-center justify-center bg-indigo-950 text-white">
+            <div class="w-12 h-12 border-4 border-indigo-400 border-t-white rounded-full loader-spin mb-4"></div>
+            <h2 class="text-lg font-bold animate-pulse">সিস্টেম লোড হচ্ছে...</h2>
+            <p class="text-indigo-400 text-[10px] mt-2 font-bold uppercase tracking-widest">ম্যানেজমেন্ট সিস্টেম</p>
+        </div>
+    </div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
